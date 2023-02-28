@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT employee (emp)>
-<!ELEMENT emp (eid,empname,department,designation,salary)>
-<!ELEMENT eid (#PCDATA)>
-<!ELEMENT empname (#PCDATA)>
-<!ELEMENT department (#PCDATA)>
-<!ELEMENT designation (#PCDATA)>
-<!ELEMENT salary (#PCDATA)>

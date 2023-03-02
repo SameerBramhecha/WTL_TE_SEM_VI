@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE employee SYSTEM "external.dtd">
-<?xml-stylesheet type="text/xsl" href="xml_style.xsl"?>
+<?xml-stylesheet type="text/xsl" href="employee.xsl"?>
 <employee>
     <emp>
         <eid>1</eid>
@@ -15,5 +15,12 @@
         <department>Sales</department>
         <designation>Manager</designation>
         <salary>1500000</salary>
+    </emp>
+    <emp>
+        <eid>3</eid>
+        <empname>Vipin</empname>
+        <department>Finance</department>
+        <designation>Head</designation>
+        <salary>1000000</salary>
     </emp>
 </employee>

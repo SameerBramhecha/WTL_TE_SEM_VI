@@ -4,4 +4,3 @@
 <!ELEMENT empname (#PCDATA)>
 <!ELEMENT department (#PCDATA)>
 <!ELEMENT designation (#PCDATA)>
-<!ELEMENT salary (#PCDATA)>

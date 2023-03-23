@@ -78,6 +78,7 @@ public class EBookStore extends HttpServlet {
 						+ "</tr>");
 			}
 			out.println("</table>");
+			
 			out.println("</html>");
 			con.close();
 		}

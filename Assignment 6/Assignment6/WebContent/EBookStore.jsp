@@ -81,10 +81,9 @@ button{
 		<%} %>
 	</table>
 	<%
-	}catch(Exception e){
-		System.out.print("Exception Caught: " + e);
-	}
-	%>
+	}catch(Exception e){ %>
+		<p><% e.printStackTrace(); %> </p> 
+	<%}%>
 	<br>
 	<form action="index.html">
 		<center><button>Go Home</button></center>   

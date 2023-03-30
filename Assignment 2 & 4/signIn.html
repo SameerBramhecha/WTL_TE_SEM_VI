@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In / Sign Up Slider Form</title>
+    <link rel="stylesheet" href="./signIn.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlay" id="overlay">
+            <div class="sign-in" id="sign-in">
+                <h1>Welcome Back!!</h1>
+                <p>To keep connected with us please login with your personal info</p>
+                <button class="switch-button" id="slide-right-button">Sign In</button>
+            </div>
+
+            <div class="sign-up" id="sign-up">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and start a journey with us</p>
+                <button class="switch-button" id="slide-left-button">Sign Up</button>
+            </div>
+        </div>
+        <div class="form">
+            <div class="sign-in" id="sign-in-info">
+                <h1>Sign In</h1><br>
+                <form id="sign-in-form" action="profile.html">
+                    <input type="email" id="email1" class="input" placeholder="Email/UID" /><br>
+                    <input type="password" id="pass" class="input" placeholder="Password" /><br>
+                    <p class="forgot-password">Forgot Your Password?</p><br>
+                    <button class="control-button in">Sign
+                        In</button>
+                </form>
+            </div>
+            <div class="sign-up" id="sign-up-info">
+                <h1>Create Account</h1>
+                <form id="sign-up-form" method="post" name="signUp">
+                    <input type="text" name="branchname" class="form__field" placeholder="Branch Name" />
+                    <input type="text" name="branchmanager" class="form__field" placeholder="Branch Manager" />
+                    <input type="email" name="email2" class="form__field" placeholder="Email Id" />
+                    <input type="password" name="password" class="form__field" placeholder="Password" />
+                    <input type="password" name="cnfrpassword" class="form__field" placeholder="Confirm Password" />
+                    <button class="control-button up" id="submitButton" onclick="return validateSignUp()">Sign
+                        Up</button>
+                </form>
+                <script src="./validate.js"></script>
+                <script src="./sample.js"></script>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

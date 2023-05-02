@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form Using Angular JS</title>
+    <meta name="viewport" content="width=device-width" charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <div ng-app="myApp">
+        <form ng-controller="frmController" novalidate>
+            <h2>Register</h2>
+
+            <label for="fname">First Name: </label>
+            <input type="text" ng-model="newuser.fname" id="fname" name="fname" required />
+            <br>
+
+            <label for="lname">Last Name: </label>
+            <input type="text" ng-model="newuser.lname" name="lname" id="lname" required />
+            <br>
+
+            <label for="uname">User Name: </label>
+            <input type="text" ng-model="newuser.uname" id="uname" name="uname" required />
+            <br>
+
+            <label for="password">Password: </label>
+            <input type="password" ng-model="newuser.password" name="password" id="password" required />
+            <br>
+
+            <button type="submit" ng-click="saveUser()">Register</button>
+            <p><a href="login.html">Login</a></p>
+        </form>
+    </div>
+</body>
+
+</html>

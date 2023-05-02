@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>Books</title>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+	<div>
+		<form action="view.php" method="post">
+		<h2>View All Books</h2>
+		<input type="submit" value="Views Books" /> 
+		</form></div><div>
+		<form action="index.php" method="post">
+		<h2>Add Data</h2>
+			Book Name : <input type="text" name="bname" />
+			Book Author : <input type="text" name="bauthor" />
+			Book Price : <input type="text" name="price" />
+			Book Quantity : <input type="text" name="quantity" />
+			<input type="submit" value="ADD BOOK" /> 
+		</form>
+		</div>
+		<div>
+		<form action="update.php" method="post">
+		<h2>Update Data</h2>
+			Book Id : <input type="text" name="bid" />
+			Book Quantity : <input type="text" name="quantity" />
+			<input type="submit" value="UPDATE" /> 
+		</form>
+		</div>
+		<div>
+		<form action="delete.php" method="post">
+		<h2>Delete Data</h2>
+			Book Id : <input type="text" name="bid" />
+			<input type="submit" value="DELETE" /> 
+		</form>
+		</div>
+	</body>
+</html>
